@@ -2,6 +2,9 @@
 
 # this lesson is about varibles and strings
 
+import string
+
+
 print (" Welcome to Hogan's Cofee!!!!!!!!")
 
 #input function
@@ -19,11 +22,12 @@ menu = " Black Cofee, Espresso, Latte, Cappucino"
 print( user + " what would you like to order from our menu ?\n Here is what we are serving.\n" + menu)
 
 
-
+# convert varible to int. you can not MULTIPLY  STRING AND NUMBER. YOU MUST USE CHANGE TO INT().
 order  = input()
 invetory = input(" How many would you like ? ")
-price =8
-total = invetory * price
+price = 8
+total = int(invetory) * price
 
-print(" Your total is $" + total)
+# CAN NOT CONCATICNATE STRING AND INT.  MUST USE TWOS STRINGS.  USE STR(VARIBLE)
+print(" Your total is $" + str(total))
 print("Sounds good " + user + ", we will have your " + order + " ready in a few minutes ! \n")
